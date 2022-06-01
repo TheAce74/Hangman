@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="The Ace">
+  <meta name="description" content="Guess or Death">
+  <meta name="description" content="Hangman Game">
+
+  <title>Hangman</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1><span>Guess</span> or <span>Death</span></h1>
+
+<h2>Pick a category</h2>
+
+<div class="category flex">
+  <button class="fruits categories">Fruits</button>
+  <button class="animals categories">Animals</button>
+  <button class="places categories">Places</button>
+  <button class="movies categories">Movies</button>
+</div>
+
+<p class="note"></p>
+
+<div class="keypad">
+  <div class="row1 flex">
+    <button class="q">Q</button>
+    <button class="w">W</button>
+    <button class="e">E</button>
+    <button class="r">R</button>
+    <button class="t">T</button>
+    <button class="y">Y</button>
+  </div>
+  <div class="row2 flex">
+    <button class="a">A</button>
+    <button class="s">S</button>
+    <button class="d">D</button>
+    <button class="f">F</button>
+    <button class="g">G</button>
+    <button class="h">H</button>
+  </div>
+  <div class="row3 flex">
+    <button class="u">U</button>
+    <button class="i">I</button>
+    <button class="o">O</button>
+    <button class="p">P</button>
+    <button class="j">J</button>
+    <button class="k">K</button>
+  </div>
+  <div class="row4 flex">
+    <button class="l">L</button>
+    <button class="z">Z</button>
+    <button class="x">X</button>
+    <button class="c">C</button>
+    <button class="v">V</button>
+    <button class="b">B</button>
+  </div>
+  <div class="row5 flex">
+    <button class="n">N</button>
+    <button class="m">M</button>
+  </div>
+</div>
+
+<div class="input flex"></div>
+
+<div class="flex">
+  <canvas class="canvas">
+    <p>The Hangman's Execution</p>
+  </canvas>
+</div>
+
+<dialog class="won final">
+  <h3>Congrats you got it right 😊</h3>
+  <p>The word was <span class="word"></span></p>
+  <button class="reset">New Game</button>
+</dialog>
+
+<dialog class="lost final">
+  <h3>Oh no! you failed ☹️</h3>
+  <p>The word was <span class="word"></span></p>
+  <button class="reset">New Game</button>
+</dialog>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

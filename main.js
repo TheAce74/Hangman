@@ -70,7 +70,7 @@ y.addEventListener('click', keys);
 z.addEventListener('click', keys);
 
 
-//function for taking key values and retrieving letter guesses; check() for correct guesses and fail() incoreect ones; keys are disabled after use
+//function for taking key values and retrieving letter guesses; check() for correct guesses and fail() incorrect ones; keys are disabled after use
 function keys(e) {
   let key = e.target.textContent;
   check(key);
